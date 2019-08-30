@@ -51,5 +51,6 @@ public class Cipher {
                 cipher.cipherText = cipher.cipherText + alphabet;
             }
         }
+        return cipher.cipherText;
     }
 }
