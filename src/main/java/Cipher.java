@@ -14,4 +14,8 @@ public class Cipher {
     public int getmShift() {
         return mShift;
     }
+
+    public static String encrypt(Cipher cipher) {
+
+    }
 }
