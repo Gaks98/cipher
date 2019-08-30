@@ -1,10 +1,12 @@
 public class Cipher {
     private String mPlainText;
     private int mShift;
+    private String cipherText;
 
     public Cipher(String plainText,int shift){
         mPlainText = plainText;
         mShift = shift;
+        cipherText = "";
     }
 
     public String getmPlainText() {
@@ -32,7 +34,7 @@ public class Cipher {
                     // re-shift to starting position
                     alphabet = (char)(alphabet + 'a'-'z' -1);
                 }
-                cipherText = cipherText + alphabet;
+                cipher.cipherText = cipher.cipherText + alphabet;
             }
     }
 }
