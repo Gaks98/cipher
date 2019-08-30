@@ -36,5 +36,8 @@ public class Cipher {
                 }
                 cipher.cipherText = cipher.cipherText + alphabet;
             }
+            // if alphabet lies between A and Z
+            else if (alphabet>='A' && alphabet<='Z'){
+                alphabet = (char)(alphabet + cipher.mShift);
     }
 }
