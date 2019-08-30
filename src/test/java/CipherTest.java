@@ -14,4 +14,10 @@ public class CipherTest {
         Cipher testCipher = new Cipher("hello",3);
         assertEquals("hello", testCipher.getmPlainText());
     }
+
+    @Test
+    public void CipherInstantiatesWithShift_true() {
+        Cipher testCipher = new Cipher("hello",3);
+        assertEquals(3, testCipher.getmShift());
+    }
 }
