@@ -47,6 +47,9 @@ public class Cipher {
                 }
                 cipher.cipherText = cipher.cipherText + alphabet;
             }
+            else {
+                cipher.cipherText = cipher.cipherText + alphabet;
+            }
         }
     }
 }
