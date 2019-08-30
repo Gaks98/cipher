@@ -20,7 +20,13 @@ public class Cipher {
 
         for (int i = 0; i<cipher.mPlainText.length(); i++) {
             //shift one character at a time.
-//            alphabet = cipher.mPlainText.charAt(i);
-        }
+            alphabet = cipher.mPlainText.charAt(i);
+
+            // if alphabet lies between a and z
+            if (alphabet>='a' && alphabet<='z'){
+                //shift the alphabet
+                alphabet = (char)(alphabet + cipher.mShift);
+
+            }
     }
 }
