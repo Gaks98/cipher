@@ -27,6 +27,12 @@ public class Cipher {
                 //shift the alphabet
                 alphabet = (char)(alphabet + cipher.mShift);
 
+                //or if alphabet is more than 'z' :
+                if (alphabet>'z'){
+                    // re-shift to starting position
+                    alphabet = (char)(alphabet + 'a'-'z' -1);
+                }
+                cipherText = cipherText + alphabet;
             }
     }
 }
