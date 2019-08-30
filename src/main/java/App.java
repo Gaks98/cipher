@@ -5,13 +5,10 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         Cipher cipher = new Cipher();
 
-
-
-
-//        System.out.println("Welcome to caesar-cipher, this is an encryption software \n" +
-//                "enter a word and the number of shift you would like to shift each letter to:\n" +
-//                "Enter word ");
-//        String plainText = scanner.nextLine();
+        System.out.println("Welcome to caesar-cipher, this is an encryption software \n" +
+                "enter a word and the number of shift you would like to shift each letter to:\n" +
+                "Enter word ");
+//        String word = scanner.nextLine();
 //
 //        System.out.println("Enter shift :");
 //        int shift = scanner.nextInt();
