@@ -10,14 +10,20 @@ public class CipherTest {
     }
 
     @Test
-    public void CipherInstantiatesWithPlainText_true() {
+    public void getmPlainText_getsPlainText_true() {
         Cipher testCipher = new Cipher("hello",3);
         assertEquals("hello", testCipher.getmPlainText());
     }
 
     @Test
-    public void CipherInstantiatesWithShift_true() {
+    public void getmShift_getsShift_3() {
         Cipher testCipher = new Cipher("hello",3);
         assertEquals(3, testCipher.getmShift());
+    }
+
+    @Test
+    public void encrypt_returnsEncryptedString_String() {
+        Cipher testCaesar = new Cipher("name",1);
+        assertEquals("obnf", Cipher.encrypt(testCaesar));
     }
 }
