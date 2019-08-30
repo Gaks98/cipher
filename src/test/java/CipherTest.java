@@ -26,4 +26,10 @@ public class CipherTest {
         Cipher testCaesar = new Cipher("name",1);
         assertEquals("obnf", Cipher.encrypt(testCaesar));
     }
+
+    @Test
+    public void decrypt_returnsString_name () {
+        Cipher testCaesar = new Cipher("obnf",1);
+        assertEquals("name",Cipher.decrypt(testCaesar));
+    }
 }
