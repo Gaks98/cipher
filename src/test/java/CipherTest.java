@@ -22,6 +22,18 @@ public class CipherTest {
     }
 
     @Test
+    public void getDecryptedMessage_getsDecryptedMessage_true() {
+        Cipher testCipher = new Cipher("hello",3);
+        assertEquals("", testCipher.getDecryptMessage());
+    }
+
+    @Test
+    public void getCipherText_getsCipherText_true() {
+        Cipher testCipher = new Cipher("hello",3);
+        assertEquals("", testCipher.getCipherText());
+    }
+
+    @Test
     public void encrypt_returnsEncryptedString_String() {
         Cipher testCaesar = new Cipher("name",1);
         assertEquals("obnf", Cipher.encrypt(testCaesar));
