@@ -2,7 +2,7 @@ public class Cipher {
     private String mPlainText;
     private int mShift;
     private String cipherText;
-    private  String decryptMessage ;
+    private  String decryptMessage;
 
     public Cipher(String plainText, int shift) {
         mPlainText = plainText;
@@ -17,6 +17,14 @@ public class Cipher {
 
     public int getmShift() {
         return mShift;
+    }
+
+    public String getCipherText() {
+        return cipherText;
+    }
+
+    public String getDecryptMessage() {
+        return decryptMessage;
     }
 
     public static String encrypt(Cipher cipher) {
@@ -53,17 +61,19 @@ public class Cipher {
                 cipher.cipherText = cipher.cipherText + alphabet;
             }
         }
+
         return cipher.cipherText;
     }
 
     //DECRYPT
-    public String decrypt(Cipher cipher){
+    public static String decrypt(Cipher cipher){
+
 
         char alphabet;
 
-        for (int i = 0; i<cipher.cipherText.length(); i++){
+        for (int i = 0; i<cipher.mPlainText.length(); i++){
             //shift one character at a time.
-            alphabet = cipherText.charAt(i);
+            alphabet = cipher.mPlainText.charAt(i);
 
             // if alphabet lies between a and z
             if (alphabet>='a' && alphabet<='z'){
@@ -76,6 +86,7 @@ public class Cipher {
                     alphabet = (char)(alphabet - 'a'+'z' +1);
                 }
                 cipher.decryptMessage = cipher.decryptMessage + alphabet;
+
             }
             // if alphabet lies between A and Z
             else if (alphabet>='A' && alphabet<='Z'){
@@ -92,7 +103,6 @@ public class Cipher {
                 cipher.decryptMessage = cipher.decryptMessage + alphabet;
             }
         }
-
         return cipher.decryptMessage;
     }
 

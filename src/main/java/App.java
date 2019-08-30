@@ -10,10 +10,13 @@ public class App {
         String word = scanner.nextLine();
         System.out.println("Enter shift :");
         int shift = scanner.nextInt();
-        Cipher cipher = new Cipher(word,shift);
+        Cipher encryption = new Cipher(word,shift);
+        String encrypted = Cipher.encrypt(encryption);
 
-        System.out.println("Encryption version :" + cipher.encrypt(cipher));
-//        System.out.println("Decrypted version : " + cipher.decrypt(cipher.encrypt(plainText)));
+        System.out.println("Encryption version :" + encrypted);
+        Cipher decryption = new Cipher(encrypted,shift);
+        String decrypted = Cipher.decrypt(decryption);
+        System.out.println("Decrypted version : " + decrypted);
     }
 }
 
