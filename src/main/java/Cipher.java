@@ -6,4 +6,12 @@ public class Cipher {
         mPlainText = plainText;
         mShift = shift;
     }
+
+    public String getmPlainText() {
+        return mPlainText;
+    }
+
+    public int getmShift() {
+        return mShift;
+    }
 }
