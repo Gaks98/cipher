@@ -9,9 +9,9 @@ public class CipherTest {
         assertEquals(true,testCipher instanceof Cipher);
     }
 
-//    @Test
-//    public void CipherInstantiatesWithPlainTextAndShift_true() {
-//        Cipher testCipher = new Cipher("hello",3);
-//        assertEquals();
-//    }
+    @Test
+    public void CipherInstantiatesWithPlainText_true() {
+        Cipher testCipher = new Cipher("hello",3);
+        assertEquals("hello", testCipher.getmPlainText());
+    }
 }
