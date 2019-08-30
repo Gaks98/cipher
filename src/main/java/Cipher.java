@@ -58,6 +58,42 @@ public class Cipher {
 
     //DECRYPT
     public String decrypt(Cipher cipher){
-        return decryptMessage;
+
+        char alphabet;
+
+        for (int i = 0; i<cipher.cipherText.length(); i++){
+            //shift one character at a time.
+            alphabet = cipherText.charAt(i);
+
+            // if alphabet lies between a and z
+            if (alphabet>='a' && alphabet<='z'){
+                //shift the alphabet
+                alphabet = (char)(alphabet - cipher.mShift);
+
+                //or if alphabet is more than 'z' :
+                if (alphabet<'a'){
+                    // re-shift to starting position
+                    alphabet = (char)(alphabet - 'a'+'z' +1);
+                }
+                cipher.decryptMessage = cipher.decryptMessage + alphabet;
+            }
+            // if alphabet lies between A and Z
+            else if (alphabet>='A' && alphabet<='Z'){
+                alphabet = (char)(alphabet - cipher.mShift);
+
+                // or if alphabet is more than 'Z' :
+                if (alphabet<'A'){
+                    // re-shift to starting position
+                    alphabet = (char)(alphabet - 'A'+'Z' + 1);
+                }
+                cipher.decryptMessage= cipher.decryptMessage + alphabet;
+            }
+            else {
+                cipher.decryptMessage = cipher.decryptMessage + alphabet;
+            }
+        }
+
+        return cipher.decryptMessage;
     }
+
 }
