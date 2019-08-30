@@ -5,10 +5,10 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to caesar-cipher, this is an encryption software \n" +
-                "Enter a word and the number of shift you would like to switch each letter to:\n" +
-                "\n Enter word :");
+                "\nEnter a word and the number of shift you would like to switch each letter to:\n" +
+                "\nEnter a word :");
         String word = scanner.nextLine();
-        System.out.println("Enter shift :");
+        System.out.println("Enter number of shift(s) :");
         int shift = scanner.nextInt();
         Cipher encryption = new Cipher(word,shift);
         String encrypted = Cipher.encrypt(encryption);
