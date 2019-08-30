@@ -2,11 +2,13 @@ public class Cipher {
     private String mPlainText;
     private int mShift;
     private String cipherText;
+    private  String decryptMessage ;
 
     public Cipher(String plainText, int shift) {
         mPlainText = plainText;
         mShift = shift;
         cipherText = "";
+        decryptMessage = "";
     }
 
     public String getmPlainText() {
@@ -53,4 +55,7 @@ public class Cipher {
         }
         return cipher.cipherText;
     }
+
+    //DECRYPT
+
 }

@@ -5,8 +5,8 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to caesar-cipher, this is an encryption software \n" +
-                "enter a word and the number of shift you would like to switch each letter to:\n" +
-                "Enter word ");
+                "Enter a word and the number of shift you would like to switch each letter to:\n" +
+                "\n Enter word :");
         String word = scanner.nextLine();
         System.out.println("Enter shift :");
         int shift = scanner.nextInt();
