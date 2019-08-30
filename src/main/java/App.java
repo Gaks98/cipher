@@ -8,10 +8,10 @@ public class App {
         System.out.println("Welcome to caesar-cipher, this is an encryption software \n" +
                 "enter a word and the number of shift you would like to shift each letter to:\n" +
                 "Enter word ");
-//        String word = scanner.nextLine();
-//
-//        System.out.println("Enter shift :");
-//        int shift = scanner.nextInt();
+        String word = scanner.nextLine();
+
+        System.out.println("Enter shift :");
+        int shift = scanner.nextInt();
 //
 //        System.out.println("Encryption version :" + cipher.encrypt(plainText));
 //        System.out.println("Decrypted version : " + cipher.decrypt(cipher.encrypt(plainText)));
