@@ -16,6 +16,11 @@ public class Cipher {
     }
 
     public static String encrypt(Cipher cipher) {
+        char alphabet;
 
+//        for (int i = 0; i<plainText.length(); i++) {
+//            //shift one character at a time.
+//            alphabet = plainText.charAt(i);
+//        }
     }
 }
