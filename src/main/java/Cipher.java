@@ -57,5 +57,7 @@ public class Cipher {
     }
 
     //DECRYPT
-
+    public String decrypt(Cipher cipher){
+        return decryptMessage;
+    }
 }
