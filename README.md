@@ -1,6 +1,6 @@
 ## Caesar cipher
 
-This project was generated with Java Language By Yvonne Gitonga
+This project was generated with Java Language By Yvonne Gakii Gitonga
 
 ## Description
 
