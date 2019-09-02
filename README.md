@@ -24,7 +24,7 @@ For example, with a shift of 1, A would be replaced by B, B would become C, and 
 
 To start using this project use the following commands:
 
-1. git clone https://github.com/Gaks98/Ceaser-Cipher.git
+1. git clone https://github.com/Gaks98/cipher.git
 2. an editor is vs code,atom, idea etc
 3. pre-installed gradle
 
